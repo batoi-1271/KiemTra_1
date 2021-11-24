@@ -1,0 +1,71 @@
+#footer {
+	background: #4c8f96;
+	border-top: 1px solid #9bd9e0;
+	margin: 0;
+	padding: 0;
+    > div {
+        margin: 0 auto;
+        padding: 30px 0 28px;
+        overflow: hidden;
+        text-align: center;
+        width: 960px;
+    }
+    div {
+        p {
+            color: #ededed;
+            display: inline-block;
+            float: right;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            margin: 0;
+            padding: 27px 0 0;
+            text-align: center;
+        }
+        .connect {
+            background: #387a82;
+            float: right;
+            height: 18px;
+            margin: 0 20px 0 150px;
+            padding: 22px 20px;
+            overflow: hidden;
+            width: 144px;
+            a {
+                background: url("/images/icons.png") no-repeat;
+                display: block;
+                float: left;
+                height: 20px;
+                margin: 0 8px;
+                padding: 0;
+                text-indent: -99999px;
+                width: 20px;
+            }
+        }
+    }
+}
+@mixin position ($val) {
+    background-position:$val;
+}
+#footer div .connect #twitter {
+    @include position(0 -32px);
+}
+#footer div .connect #twitter:hover {
+    @include position(-25 -32px);
+}
+#footer div .connect #facebook {
+    @include position(0 -57px);
+}
+#footer div .connect #facebook:hover {
+    @include position(-25 -57px);
+}
+#footer div .connect #googleplus {
+    @include position(0 -82px);
+}
+#footer div .connect #googleplus:hover {
+    @include position(-25 -82px);
+}
+#footer div .connect #pinterest {
+    @include position(0 -107px);
+}
+#footer div .connect #pinterest:hover {
+    @include position(-25 -107px);
+}

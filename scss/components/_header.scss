@@ -1,0 +1,94 @@
+#header {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+    .section {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        .logo {
+            float: left;
+            margin: 0;
+            padding: 60px 0 0 10px;
+            width: 324px;
+            a {
+                background: url("/images/bg-logo.png") repeat-x top left;
+                color: #fff;
+                display: block;
+                font-family: 'Arimo-Bold';
+                font-size: 60px;
+                font-weight: normal;
+                height: 130px;
+                line-height: 130px;
+                margin: 0;
+                padding: 0;
+                text-align:center;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 270px;
+            }
+        }
+        ul {
+            display: inline-block;
+            // float: right;
+            margin: 0;
+            overflow: hidden;
+            padding: 114px 0 0;
+            li {
+                background: url("/images/bg-nav-right.gif") no-repeat top right;
+                display: inline-block;
+                // float: left;
+                list-style: none;
+                margin: 0 10px;
+                padding: 0;
+                a {
+                    background: url("/images/bg-nav-left.gif") no-repeat top left;
+                    color: #fff;
+                    display: inline-block;
+                    font-size: 16px;
+                    height: 30px;
+                    letter-spacing: 0.05em;
+                    line-height: 30px;
+                    margin: 0;
+                    padding: 0 15px;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: #ccc;
+                    }
+                }
+                .selected {
+                    background: url("/images/bg-nav-right-selected.gif") no-repeat top right;
+                    a {
+                        background: url("/images/bg-nav-left-selected.gif") no-repeat top left;
+                    }
+                }
+            }
+        }
+    }
+    .article {
+        background: #fff;
+        border: 2px solid #5fb3bd;
+        border-radius: 4px;
+        margin: 50px auto 28px;
+        overflow: hidden;
+        padding: 0;
+        width: 936px;
+        img {
+            display: block;
+            float: left;
+            margin: 0 50px 0 0;
+            padding: 0;
+        }
+        h1 {
+            color: #1b2130;
+            font-family: 'ChangaOne';
+            font-size: 40px;
+            font-weight: normal;
+            margin: 0;
+            line-height: 50px;
+            padding: 110px 30px 30px;
+        }
+    }
+}
